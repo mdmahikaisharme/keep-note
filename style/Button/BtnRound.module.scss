@@ -1,0 +1,49 @@
+.btnRound {
+	@apply grid place-items-center hover:bg-gray-800 active:bg-gray-700 select-none;
+
+	&Size {
+		&-8 {
+			@apply w-8 h-8 rounded-full;
+		}
+		&-10 {
+			@apply w-10 h-10 rounded-full;
+		}
+	}
+
+	&Height {
+		&-8 {
+			@apply h-8 px-3 rounded-md;
+		}
+		&-10 {
+			@apply h-10 px-3 rounded-md;
+		}
+	}
+
+	&Text {
+		&Size {
+			&-base {
+				@apply text-base;
+			}
+			&-sm {
+				@apply text-sm;
+			}
+		}
+
+		&Color {
+			&-white {
+				@apply text-white;
+			}
+			&-gray {
+				&-300 {
+					@apply text-gray-300;
+				}
+				&-400 {
+					@apply text-gray-400;
+				}
+				&-700 {
+					@apply text-gray-700;
+				}
+			}
+		}
+	}
+}
